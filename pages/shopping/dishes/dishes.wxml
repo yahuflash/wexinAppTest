@@ -17,9 +17,7 @@
 				<view class="add-btn"><icon type="{{item.status ? 'success' : 'circle'}}" color="orange" size="30"></icon></view>
 			</view>
 		</block>
-
 	</view>
-
 </view>
 
 <!-- cart -->

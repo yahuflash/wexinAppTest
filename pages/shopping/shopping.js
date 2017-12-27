@@ -4,9 +4,9 @@ var app = getApp()
 Page({
   data: {
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      'http://n.sinaimg.cn/tech/transform/w640h320/20171227/tpwe-fypyuvc5492510.jpg',
+      'http://n.sinaimg.cn/tech/transform/w640h320/20171225/-hud-fypyuva8367676.jpg',
+      'http://n.sinaimg.cn/tech/transform/w640h320/20171227/Ik0r-fypyuvc5445117.png'
     ],
     indicatorDots: true,
     autoplay: true,
@@ -14,11 +14,11 @@ Page({
     duration: 1000,
     navItems:[
       {
-        name:'堂食',
+        name:'点餐',
         url:'dishes'
       },
       {
-        name:'外卖',
+        name:'饮料',
         url:'take',
         isSplot:true
       },

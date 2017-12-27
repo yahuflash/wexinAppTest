@@ -1,1 +1,4 @@
-take.wxml
+<view class='box'>
+  <button>scroll-view</button>
+  <button>swiper</button>
+</view>

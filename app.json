@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/login/login",
@@ -7,37 +7,100 @@
     "pages/company/company",
     "pages/shopping/shopping",
     "pages/shopping/dishes/dishes",
-    "pages/shopping/take/take"
+    "pages/shopping/take/take",
+    "pages/component/index",
+    "pages/component/pages/view/view",
+    "pages/component/pages/scroll-view/scroll-view",
+    "pages/component/pages/swiper/swiper",
+    "pages/component/pages/text/text",
+    "pages/component/pages/icon/icon",
+    "pages/component/pages/progress/progress",
+    "pages/component/pages/button/button",
+    "pages/component/pages/checkbox/checkbox",
+    "pages/component/pages/form/form",
+    "pages/component/pages/input/input",
+    "pages/component/pages/label/label",
+    "pages/component/pages/picker/picker",
+    "pages/component/pages/radio/radio",
+    "pages/component/pages/slider/slider",
+    "pages/component/pages/switch/switch",
+    "pages/component/pages/textarea/textarea",
+    "pages/component/pages/navigator/navigator",
+    "pages/component/pages/navigator/navigate",
+    "pages/component/pages/navigator/redirect",
+    "pages/component/pages/image/image",
+    "pages/component/pages/audio/audio",
+    "pages/component/pages/video/video",
+    "pages/component/pages/map/map",
+    "pages/component/pages/canvas/canvas",
+    "pages/API/index",
+    "pages/API/pages/login/login",
+    "pages/API/pages/get-user-info/get-user-info",
+    "pages/API/pages/request-payment/request-payment",
+    "pages/API/pages/share/share",
+    "pages/API/pages/custom-message/custom-message",
+    "pages/API/pages/template-message/template-message",
+    "pages/API/pages/set-navigation-bar-title/set-navigation-bar-title",
+    "pages/API/pages/navigation-bar-loading/navigation-bar-loading",
+    "pages/API/pages/navigator/navigator",
+    "pages/API/pages/pull-down-refresh/pull-down-refresh",
+    "pages/API/pages/animation/animation",
+    "pages/API/pages/action-sheet/action-sheet",
+    "pages/API/pages/modal/modal",
+    "pages/API/pages/toast/toast",
+    "pages/API/pages/get-network-type/get-network-type",
+    "pages/API/pages/get-system-info/get-system-info",
+    "pages/API/pages/on-compass-change/on-compass-change",
+    "pages/API/pages/make-phone-call/make-phone-call",
+    "pages/API/pages/scan-code/scan-code",
+    "pages/API/pages/request/request",
+    "pages/API/pages/web-socket/web-socket",
+    "pages/API/pages/upload-file/upload-file",
+    "pages/API/pages/download-file/download-file",
+    "pages/API/pages/image/image",
+    "pages/API/pages/voice/voice",
+    "pages/API/pages/file/file",
+    "pages/API/pages/on-accelerometer-change/on-accelerometer-change",
+    "pages/API/pages/canvas/canvas",
+    "pages/API/pages/background-audio/background-audio",
+    "pages/API/pages/video/video",
+    "pages/API/pages/get-location/get-location",
+    "pages/API/pages/open-location/open-location",
+    "pages/API/pages/choose-location/choose-location",
+    "pages/API/pages/storage/storage"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "images/bar/me-0.jpg",
-      "selectedIconPath": "images/bar/me-1.jpg"
-    },{
-      "pagePath": "pages/logs/logs",
-      "text": "日志",
-      "iconPath": "images/bar/movie-0.jpg",
-      "selectedIconPath": "images/bar/movie-1.jpg"
-    },
-    {
-      "pagePath": "pages/login/login",
-      "text": "登陆",
-      "iconPath": "images/me/yingping.jpg",
-      "selectedIconPath": "images/me/yingping.jpg"
-    },
-    {
-      "pagePath": "pages/shopping/shopping",
-      "text": "购物",
-      "iconPath": "images/me/yingping.jpg",
-      "selectedIconPath": "images/me/yingping.jpg"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/bar/me-0.jpg",
+        "selectedIconPath": "images/bar/me-1.jpg"
+      },
+      {
+        "pagePath": "pages/component/index",
+        "text": "组件",
+        "iconPath": "images/bar/movie-0.jpg",
+        "selectedIconPath": "images/bar/movie-1.jpg"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "登陆",
+        "iconPath": "images/me/yingping.jpg",
+        "selectedIconPath": "images/me/yingping.jpg"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "购物",
+        "iconPath": "images/me/yingping.jpg",
+        "selectedIconPath": "images/me/yingping.jpg"
+      }
+    ]
   }
 }
