@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/mobile/mobile",
+    "pages/company/company",
+    "pages/shopping/shopping",
+    "pages/shopping/dishes/dishes",
+    "pages/shopping/take/take"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/bar/me-0.jpg",
+      "selectedIconPath": "images/bar/me-1.jpg"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "images/bar/movie-0.jpg",
+      "selectedIconPath": "images/bar/movie-1.jpg"
+    },
+    {
+      "pagePath": "pages/login/login",
+      "text": "登陆",
+      "iconPath": "images/me/yingping.jpg",
+      "selectedIconPath": "images/me/yingping.jpg"
+    },
+    {
+      "pagePath": "pages/shopping/shopping",
+      "text": "购物",
+      "iconPath": "images/me/yingping.jpg",
+      "selectedIconPath": "images/me/yingping.jpg"
+    }]
+  }
+}
