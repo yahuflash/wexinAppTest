@@ -48,7 +48,10 @@
 }
 
 .cart{
-	display: block;
+	display: flex;
+  flex-direction:row;
+  align-items:baseline;
+  justify-content: space-around;
 	position: fixed;
 	left: 0;
 	right: 0;

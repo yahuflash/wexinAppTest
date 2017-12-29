@@ -10,6 +10,8 @@ Page({
     curIndex: 0,
     cart: [],
     cartTotal: 0,
+    cartPrice: 0,
+    buyDisabled:true,
     navList: [
       {
         id: 1,
@@ -81,7 +83,79 @@ Page({
     ],
     dishes: []
   },
+  loadingChange: function () {
+    setTimeout(() => {
+      this.setData({
+        hidden: true
+      })
+    }, 2000)
+  },
+  selectNav: function (event) {
+    let id = event.target.dataset.id,
+      index = parseInt(event.target.dataset.index);
+    self = this;
+    this.setData({
+      curNav: id,
+      curIndex: index
+    })
+  },
+  // 选择菜品
+  selectDish: function (event) {
+    let dish = event.currentTarget.dataset.dish;
+    let flag = true;
+    let cart =[];
+    cart = this.data.cart;
+    let priceValue = 0;
+    if (cart.length > 0) {
+      cart.forEach(function (item, index) {
+        if (item == dish) {
+          cart.splice(index, 1);
+          flag = false;
+        }
+      })
+    }
+    if (flag) cart.push(dish);
+    let disabledBool = true;
+    if (cart.length>0){
+      disabledBool = false;
+    }
+    for (let dishId of cart) {
+      let dishItem = this.getDishItemDataByID(dishId)
+      priceValue += dishItem.price;
+    }
+    this.setData({
+      cartTotal: cart.length,
+      buyDisabled: disabledBool,
+      cartPrice: priceValue
+    })
+    this.setStatus(dish)
+  },
 
+  setStatus: function (dishId) {
+    let dishes = this.data.dishesList;
+    for (let dish of dishes) {
+      dish.forEach((item) => {
+        if (item.id == dishId) {
+          item.status = !item.status || false
+        }
+      })
+    }
+
+    this.setData({
+      dishesList: this.data.dishesList
+    })
+  },
+
+  getDishItemDataByID: function (dishId) {
+    let dishes = this.data.dishesList;
+    for (let dishArr of dishes) {
+      for (let item of dishArr) {
+        if (item.id == dishId) {
+          return item;
+        }
+      }
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -136,55 +210,5 @@ Page({
    */
   onShareAppMessage: function () {
     
-  },
-  loadingChange:function() {
-    setTimeout(() => {
-      this.setData({
-        hidden: true
-      })
-    }, 2000)
-  },
-  selectNav:function(event) {
-    let id = event.target.dataset.id,
-      index = parseInt(event.target.dataset.index);
-    self = this;
-    this.setData({
-      curNav: id,
-      curIndex: index
-    })
-  },
-  // 选择菜品
-  selectDish: function(event) {
-    let dish = event.currentTarget.dataset.dish;
-    let flag = true;
-    let cart = this.data.cart;
-
-    if (cart.length > 0) {
-      cart.forEach(function (item, index) {
-        if (item == dish) {
-          cart.splice(index, 1);
-          flag = false;
-        }
-      })
-    }
-    if (flag) cart.push(dish);
-    this.setData({
-      cartTotal: cart.length
-    })
-    this.setStatus(dish)
-  },
-  setStatus: function(dishId) {
-    let dishes = this.data.dishesList;
-    for (let dish of dishes) {
-      dish.forEach((item) => {
-        if (item.id == dishId) {
-          item.status = !item.status || false
-        }
-      })
-    }
-
-    this.setData({
-      dishesList: this.data.dishesList
-    })
   },
 })

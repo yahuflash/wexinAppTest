@@ -23,6 +23,8 @@
 <!-- cart -->
 <view class="cart">
 	<text class="total">购物车：{{cartTotal}}</text>
+  <text class="price">总计：{{cartPrice}} 元</text>
+  <button class="buybtn" disabled="{{buyDisabled}}" type="primary">购买</button>
 </view>
 
 <loading hidden="{{hidden}}">玩命加载中…</loading>
